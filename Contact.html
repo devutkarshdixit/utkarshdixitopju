@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <title>MultiPage Responsive Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <!----------Sub-Header Section-->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <!-----menu contents-->
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Hostel.html">HOSTEL</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+
+    <!---------Contact Us----->
+
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14790.261884619784!2d83.32946147922358!3d22.066211559025277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2992d50446a6f0!2sO.P.%20Jindal%20University!5e0!3m2!1sen!2sin!4v1628754518510!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>O.P. Jindal University,
+                            Punjipathra</h5>
+                        <p>Raigarh, Chhattisgarh 496109, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 1800 12000 8090</h5>
+                        <p>Mon to Fri, 10 Am to 4Pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@opju.ac.in</h5>
+                        <p>Email us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+
+                <!-------------------Contact-Form----->
+
+
+                <form method="POST" name="contact-form">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-----Footer----------->
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Pursuit of knowledge through experience is the cornerstone of O. P. Jindal University.<br> We aim to build an
+            institution where students learn by doing, where real world challenges find practical solutions and
+            innovation happens not by chance, but by design.<br>© 2021 OP Jindal University, All Rights Reserved.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made by<a href="https://lucky-dixit.github.io/utkarshdixit.github.io/" target="_blank">Utkarsh Dixit</a></p>
+    </section>
+
+    <!-- script to get the details in google sheets  -->
+    <script>
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcQk3sMZI2Y53Gcpu5ZOAZ-0NoPDCquCrzAXBLgNho5cfWJ9zMoCaD4cW1-kMyTMKt/exec'
+        const form = document.forms['contact-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>   
+    <script src="script.js"></script>
+</body>
+
+</html>

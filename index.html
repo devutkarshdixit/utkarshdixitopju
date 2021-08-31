@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <title>MultiPage Responsive Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body>
+    <!----------Header Section-->
+
+    <button onclick="topFunction()" id="myBtn"><i class="fa fa-arrow-up"></i></button>
+
+    <section class="header">
+
+
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <!-----menu contents-->
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Hostel.html">HOSTEL</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box">
+
+            <h1>University of Steel and Management</h1>
+            <p>OP Jindal University (OPJU) was set up to bring high quality education to its students based on a world
+                class curriculum,<br> the latest teaching methodology and committed faculty members.</p>
+            <a href="https://www.opju.ac.in" target="_blank" class="btn">Visit us to know more</a>
+
+        </div>
+
+        <button onclick="scrollWin()" class="arrow"><i class="fa fa-angle-down"></i></button>
+
+
+    </section>
+
+    <!---------Course Section-->
+
+    <section class="course">
+        <h1>COURSES We Offer</h1>
+        <p>We Offer COURSES in all the 3 fields - Technology, Science and Management</p>
+
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Technology</h3>
+                <p><b>BTech</b> <span>An undergraduate academic degree conferred after the
+                        completion of a 4-year program of studies</span>,<br> <b>MTech</b> <span>A postgraduate academic
+                        degree
+                        conferred after the
+                        completion of a 2-year program of studies</span>,<br><b>PhD </b><span>The
+                        most
+                        common degree at the highest academic level awarded following a course of study</span></p>
+            </div>
+            <div class="course-col">
+                <h3>Science</h3>
+                <p><b>BSc</b> <span>A bachelor's degree awarded for programs that generally last 3 years</span>,<br><br>
+                    <b>Msc</b> <span>A Master's degree awarded for programs that generally last
+                        2 years</span>,<br><br><b>Diploma</b> <span>A short term course generally of 3 years which
+                        mainly
+                        focus
+                        on training students in particular field</span>
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Management</h3>
+                <p><b>BBA</b> <span>A bachelor's degree in business administration</span>,<br><b>MBA</b> <span>A
+                        Master's degree in business administration</span>,<br><b>BCom</b> <span>The Bachelor of
+                        Commerce is a 4-year undergraduate degree in commerce and its related subjects. BCom
+                        has a broader perspective and teaches students a wide range of subjects.</span></p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-----Campus-->
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p>Our Campus is literally bigger you might forget your way sometimes... hehe just kidding</p>
+
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/babujichowk.jpg">
+                <div class="layer">
+                    <h3>Babuji Chowk</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/OT.jpg">
+                <div class="layer">
+                    <h3>OPEN THEATRE</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/ground.jpg">
+                <div class="layer">
+                    <h3>Multi-Purpose GROUND</h3>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!----Facilities-->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer good facilities ,you'll love it Hehe</p>
+
+
+        <div class="row">
+
+            <div class="facilities-col">
+                <img src="images/lib.jpg">
+                <h3>Library</h3>
+                <p>Our Library</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/gym.jpg">
+                <h3>Gym</h3>
+                <p>Gym for health and wealth</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/mess.jpg">
+                <h3>Mess</h3>
+                <p>Tatsy and Healthy food</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!--------Contact----->
+    <section class="contact">
+        <h1>Enroll for various Courses available in Technology and Marketing fields</h1>
+        <a href="https://www.opju.ac.in" target="_blank" class="btn">Contact Us</a>
+    </section>
+
+    <!-----Footer------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Pursuit of knowledge through experience is the cornerstone of O. P. Jindal University.<br> We aim to build an
+            institution where students learn by doing, where real world challenges find practical solutions and
+            innovation happens not by chance, but by design.<br>© 2021 OP Jindal University, All Rights Reserved.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+
+        <p>Made by<a href="https://lucky-dixit.github.io/utkarshdixit.github.io/" target="_blank">Utkarsh Dixit</a></p>
+    </section>
+
+    <script>
+        function scrollWin() {
+            window.scrollTo(0, 650);
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

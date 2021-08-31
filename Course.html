@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <title>MultiPage Responsive Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <!----------Sub-Header Section-->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <!-----menu contents-->
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Hostel.html">HOSTEL</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+
+    </section>
+
+
+
+
+    <!------Course------------->
+
+    <section class="course">
+        <h1>COURSES We Offer</h1>
+        <p>We Offer COURSES in all the 3 fields - Technology, Science and Management</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Technology</h3>
+                <p><b>BTech</b> <span>An undergraduate academic degree conferred after the
+                        completion of a 4-year program of studies</span>,<br> <b>MTech</b> <span>A postgraduate academic
+                        degree
+                        conferred after the
+                        completion of a 2-year program of studies</span>,<br><b>PhD </b><span>The
+                        most
+                        common degree at the highest academic level awarded following a course of study</span></p>
+            </div>
+            <div class="course-col">
+                <h3>Science</h3>
+                <p><b>BSc</b> <span>A bachelor's degree awarded for programs that generally last 3 years</span>,<br><br>
+                    <b>Msc</b> <span>A Master's degree awarded for programs that generally last
+                        2 years</span>,<br><br><b>Diploma</b> <span>A short term course generally of 3 years which
+                        mainly
+                        focus
+                        on training students in particular field</span>
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Management</h3>
+                <p><b>BBA</b> <span>A bachelor's degree in business administration</span>,<br><b>MBA</b> <span>A
+                        Master's degree in business administration</span>,<br><b>BCom</b> <span>The Bachelor of
+                        Commerce is a 4-year undergraduate degree in commerce and its related subjects. BCom
+                        has a broader perspective and teaches students a wide range of subjects.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!----Facilities-->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer good facilities ,you'll love it Hehe</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/lib.jpg">
+                <h3>Library</h3>
+                <p>Our Library</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/gym.jpg">
+                <h3>Gym</h3>
+                <p>Gym for health and wealth</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/mess.jpg">
+                <h3>Mess</h3>
+                <p>Tatsy and Healthy food</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-----Blog-->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/blog.jpg">
+                <h2>Our Scholarships and Online Programs</h2>
+                <p>* Aggregate of class XII (10 + 2) percentage of all subjects from any recognized board in case of B
+                    Tech, BBA, B Com (Hons), BSc (Hons) program.
+                    # Aggregate of class X (10th) percentage in case of Diploma program.
+                    @ Aggregate Graduation percentage in case of MSc program.
+
+                    Note:
+
+                    The scholarships are given on an annual basis. To continue the scholarships after the first year,
+                    the student will have to maintain a minimum prescribed academic performance during the course of the
+                    program. The students selected for any of the above mentioned scholarships in the first year will
+                    have to complete the entire course of duration at OPJU only</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+
+                    <!--------Comment form--->
+
+
+                    <form class="comment-form" name="comment-form" method="POST">
+                        <input type="text" name="Name" placeholder="Enter Name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea rows="5" name="Comments" placeholder="Your Comments" required></textarea>
+                        <button type="submit" class="btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>OPJU at a glance</h3>
+                <div>
+                    <span>Campus Drives</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Students Placed</span>
+                    <span>82.5%</span>
+                </div>
+                <div>
+                    <span>Average Package</span>
+                    <span>5.75L</span>
+                </div>
+                <div>
+                    <span>Students</span>
+                    <span>1500+</span>
+                </div>
+                <div>
+                    <span>Faculty</span>
+                    <span>70+</span>
+                </div>
+                <div>
+                    <span>Non Teaching Staff</span>
+                    <span>100+</span>
+                </div>
+                <div>
+                    <span>Infrastructure</span>
+                    <span>50 Acres Area</span>
+                </div>
+                <div>
+                    <span>Networked Computer Systems</span>
+                    <span>500+</span>
+                </div>
+                <div>
+                    <span>Well Equiped Laboratories</span>
+                    <span>50+</span>
+                </div>
+                <div>
+                    <span>Connectivity(Fully Wifi Campus)</span>
+                    <span>260 Mbps</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-----Footer----------->
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Pursuit of knowledge through experience is the cornerstone of O. P. Jindal University.<br> We aim to build an
+            institution where students learn by doing, where real world challenges find practical solutions and
+            innovation happens not by chance, but by design.<br>© 2021 OP Jindal University, All Rights Reserved.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made by<a href="https://lucky-dixit.github.io/utkarshdixit.github.io/" target="_blank">Utkarsh Dixit</a></p>
+    </section>
+
+    <!-- script to get the details in google sheets -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-JkYirJm-9VG91mA-08lEAVPx7ZWn_EBs0RI5BqYBmwpDy5mFWkLTInKaOA1tqgFTFQ/exec'
+        const form = document.forms['comment-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! Your comments are valuable to us"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
