@@ -264,9 +264,12 @@ h3{
 }
 .facilities-col{
     flex-basis: 31%;
+    background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.1s;
 }
 .facilities-col img{
     width: 100%;
@@ -279,6 +282,9 @@ h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+}
+.facilities-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 
