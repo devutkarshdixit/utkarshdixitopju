@@ -281,7 +281,6 @@ h3{
 .facilities-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: left;
 }
 .facilities-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
