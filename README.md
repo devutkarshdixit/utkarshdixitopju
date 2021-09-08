@@ -1,3 +1,3 @@
 # utkarshdixitopju
 Educational Institute Website.
-https://lucky-dixit.github.io/utkarshdixitopju/
+https://utkarsh-dixit-git.github.io/utkarshdixitopju/
