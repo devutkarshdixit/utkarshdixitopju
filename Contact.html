@@ -85,7 +85,7 @@
                 <!-------------------Contact-Form----->
 
 
-                <form method="POST" name="contact-form">
+                <form name="contact-form" netlify>
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email" placeholder="Enter your email address" required>
                     <input type="text" name="subject" placeholder="Enter your Subject" required>
@@ -118,20 +118,6 @@
         <p>Made by<a href="https://utkarsh-dixit-git.github.io/utkarshdixit/" target="_blank">Utkarsh Dixit</a></p>
     </section>
 
-    <!-- script to get the details in google sheets  -->
-    <script>
-
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcQk3sMZI2Y53Gcpu5ZOAZ-0NoPDCquCrzAXBLgNho5cfWJ9zMoCaD4cW1-kMyTMKt/exec'
-        const form = document.forms['contact-form']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thanks for Contacting us..!"))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>   
     <script src="script.js"></script>
 </body>
 

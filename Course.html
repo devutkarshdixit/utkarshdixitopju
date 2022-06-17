@@ -131,7 +131,7 @@
                     <!--------Comment form--->
 
 
-                    <form class="comment-form" name="comment-form" method="POST">
+                    <form class="comment-form" name="comment-form" netlify>
                         <input type="text" name="Name" placeholder="Enter Name" required>
                         <input type="email" name="Email" placeholder="Enter your Email" required>
                         <textarea rows="5" name="Comments" placeholder="Your Comments" required></textarea>
@@ -204,19 +204,6 @@
         </div>
         <p>Made by<a href="https://utkarsh-dixit-git.github.io/utkarshdixit/" target="_blank">Utkarsh Dixit</a></p>
     </section>
-
-    <!-- script to get the details in google sheets -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-JkYirJm-9VG91mA-08lEAVPx7ZWn_EBs0RI5BqYBmwpDy5mFWkLTInKaOA1tqgFTFQ/exec'
-        const form = document.forms['comment-form']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thanks for Contacting us..! Your comments are valuable to us"))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 
     <script src="script.js"></script>
 </body>
